@@ -14,8 +14,11 @@ class MainActivity : AppCompatActivity() {
         binding=DataBindingUtil.setContentView(this,R.layout.activity_main)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-       binding.textView1.text="People are like rivers"
-        binding.textView2.text="Top G"
+        var quoteobj=Quotes("testing","Rishabh")
+        binding.quote=quoteobj
+
+
+
 
 
 

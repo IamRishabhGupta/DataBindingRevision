@@ -5,6 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="quote"
+            type="com.example.databindingrevision.Quotes" />
+    </data>
+
 
 
 
@@ -20,14 +26,14 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is TextView 1"
+            android:text="@{quote.text}"
             android:padding="16dp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is TextView 2"
+            android:text="@{quote.author}"
             android:padding="16dp" />
 
         <Button
